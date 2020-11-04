@@ -1,22 +1,11 @@
-"use strict";
-import express from "express";
-import morgan from "morgan";
-import helmet from "helmet";
-import bodyParser from "body-parser";
-import cookieParser from "cookie-parser";
-import path from "path";
+import dotenv from "dotenv";
+import app from "./app";
 
-const app = express();
+dotenv.config();
 
-app.use(helmet());
-app.set("view engine", "ejs");
-app.set("views", paht.join(__dirname, "views"));
-app.use("/static", express.static(path.join(__dirname, "static")));
-app.use(cookieParser());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(morgan("dev"));
+const PORT = process.env.PORT || 4000;
 
-app.get("/", (req, res) => {
-  res.render("Home");
-});
+const handleListening = () =>
+  console.log(`✅ Listening on : http://localhost:${PORT}`);
+
+app.listen(PORT, handleListening);
