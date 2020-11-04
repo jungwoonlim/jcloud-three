@@ -1,0 +1,24 @@
+{
+  "name": "jcloud-three",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jungwoonlim/jcloud-three.git",
+  "author": "jungwoonlim <wypo23@morpheus3d.co.kr>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/init.js --delay 2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "helmet": "^4.2.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.6"
+  }
+}
