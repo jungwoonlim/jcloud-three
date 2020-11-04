@@ -2,15 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/style.css">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <link type="text/css" rel="stylesheet" href="/static/css/loader.css">
     <title><%= title %></title>
 </head>
 <body>
     <div class="main__container">
         <h1><%= title %></h1>
+        <div id="glFullscreen">
+           <canvas id="webglFace"></canvas>
+        </div>
     </div>
 
-    <script src="/static/main.js"></script>
+    <script type="module" src="/static/js/objLoader.js"></script>
 </body>
 </html>
