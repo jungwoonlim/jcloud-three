@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+.main__container {
+  margin: 10% auto;
+  padding: 5%;
+  width: 600px;
+  height: 800px;
+  border: 5px solid skyblue;
+  border-radius: 50px;
+  background-color: aquamarine;
+}
+
+.main__container h1 {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.main__container ul {
+  margin-top: 50px;
+}
+
+.main__container li {
+  width: 250px;
+  margin: 0 auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

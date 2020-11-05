@@ -1,7 +1,7 @@
 import routes from "../routes";
 
 export const home = (req, res) => {
-  res.render("Home", { title: "Home" });
+  res.render("Home", { title: "3D Loader" });
 };
 
 export const objLoader = (req, res) => {
